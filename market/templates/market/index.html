@@ -1,0 +1,253 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <!--  -->
+
+    <link rel="stylesheet" type="text/css" href="{% static 'market/css/style.css' %}">
+    <link rel="icon" href="{% static 'market/images/logo.jpg' %}">
+    <title>Мармелад мира</title>
+</head>
+
+<body>
+<div class="head">
+    <!--  Начальная страница-->
+    <header class="header">
+        <nav class="navigation">
+            <div class="logo-div">
+                <a href="#"><img class='logo' src="{% static 'market/images/logo.jpg' %}" alt="Logo"></a>
+            </div>
+            <div class="navigation-left">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="navigation-right">
+                <!-- <ul> -->
+                <!-- Текст на картинках с пмоощью JS -->
+                <div class="icon"><a href="#"><img src="../../static/market/images/wapp.png" alt="logo"></a></div>
+                <div class="icon"><a href="#"><img src="../../static/market/images/telegram.png" alt="logo"></a></div>
+                <div class="icon"><a href="#"><img src="../../static/market/images/instagram.png" alt="logo"></a></div>
+                <div class="number"><a href="#">+7938-000-01-00</a></div>
+                <div class="icon"><a href="#"><img src="../../static/market/images/grocery-cart-icon-7499.png"
+                                                   alt=""></a></div>
+
+                <!-- </ul> -->
+            </div>
+        </nav>
+    </header>
+</div>
+<!-- Связять с БД -->
+<div class="text-center-slider">
+    <div class="slider-btn prev">
+        <strong>&lt;</strong>
+    </div>
+    <div class="slider-btn next">
+        <strong>&gt;</strong>
+    </div>
+    <div class="slider-line">
+        <img class="slider-img" src="{% static 'market/images/home-back.jpg' %}" alt="">
+        <img class="slider-img" src="{% static 'market/images/slider.jpg' %}" alt="">
+        <img class="slider-img" src="{% static 'market/images/slider1.jpg' %}" alt="">
+    </div>
+    <!-- Точки для показа номера переключения слайдов -->
+    <!-- <div class="slider-dot">
+      &#x25CB;
+    </div>
+    <div class="slider-dot">
+      &#x25CB;
+    </div>
+    <div  class="slider-dot">
+      &#x25CB;
+    </div> -->
+</div>
+
+<!-- Популярное -->
+<div class="text-popular-wrapper">
+    <h1 class="text-popular">Популярное</h1>
+</div>
+<!-- Популярные позиции(или по другому аттрибуту из бд) -->
+<div class="popular-pos-wrapper">
+    <div class="popular-position">
+        <div class="popular-left">
+            <a href="#" style="display: block;">
+                <img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="popular-right">
+            <div class="position-name"><h3><a href="#">Мармеладная лента Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Enim, reprehenderit. Nostrum labore illum dolorum amet, omnis eligendi possimus
+                accusamus rerum iusto recusandae error iure adipisci sed molestias nulla quaerat veniam. Id voluptatem
+                reiciendis, aut itaque illo quisquam non atque natus iusto veniam, nostrum expedita fugit, unde
+                consequatur odio ad dolor!</a></h3></div>
+            <div class="position-description">Lorem ipsum dolor sit lor amet consectetur adipisicing elit. Vitae magnam
+                voluptatem sit blanditiis consequuntur consectetur repellat doloremque quae facere illo.
+            </div>
+            <div class="position-right-btm">
+                <div class="position-price">350руб/кг</div>
+                <button class="order">В корзину</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popular-position">
+        <div class="popular-left">
+            <a href="#" style="display: block;">
+                <img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="popular-right">
+            <div class="position-name"><h3><a href="#"> Мармеладная лента Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Enim, reprehenderit. Nostrum labore illum dolorum amet, omnis eligendi possimus
+                accusamus rerum iusto recusandae error iure adipisci sed molestias nulla quaerat veniam. Id voluptatem
+                reiciendis, aut itaque illo quisquam non atque natus iusto veniam, nostrum expedita fugit, unde
+                consequatur odio ad dolor!</a></h3></div>
+            <div class="position-description">Lorem ipsum dolor sit lor amet consectetur adipisicing elit. Vitae magnam
+                voluptatem sit blanditiis consequuntur consectetur repellat doloremque quae facere illo.
+            </div>
+            <div class="position-right-btm">
+                <div class="position-price">350руб/кг</div>
+                <button class="order">В корзину</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popular-position">
+        <div class="popular-left">
+            <a href="#" style="display: block;">
+                <img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="popular-right">
+            <div class="position-name"><h3>Мармеладная лента Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Enim, reprehenderit. Nostrum labore illum dolorum amet, omnis eligendi possimus accusamus rerum iusto
+                recusandae error iure adipisci sed molestias nulla quaerat veniam. Id voluptatem reiciendis, aut itaque
+                illo quisquam non atque natus iusto veniam, nostrum expedita fugit, unde consequatur odio ad dolor!</h3>
+            </div>
+            <div class="position-description">Lorem ipsum dolor sit lor amet consectetur adipisicing elit. Vitae magnam
+                voluptatem sit blanditiis consequuntur consectetur repellat doloremque quae facere illo.
+            </div>
+            <div class="position-right-btm">
+                <div class="position-price">350руб/кг</div>
+                <button class="order">В корзину</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popular-position">
+        <div class="popular-left">
+            <a href="#" style="display: block;">
+                <img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="popular-right">
+            <div class="position-name"><h3>Мармеладная лента Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Enim, reprehenderit. Nostrum labore illum dolorum amet, omnis eligendi possimus accusamus rerum iusto
+                recusandae error iure adipisci sed molestias nulla quaerat veniam. Id voluptatem reiciendis, aut itaque
+                illo quisquam non atque natus iusto veniam, nostrum expedita fugit, unde consequatur odio ad dolor!</h3>
+            </div>
+            <div class="position-description">Lorem ipsum dolor sit lor amet consectetur adipisicing elit. Vitae magnam
+                voluptatem sit blanditiis consequuntur consectetur repellat doloremque quae facere illo.
+            </div>
+            <div class="position-right-btm">
+                <div class="position-price">350руб/кг</div>
+                <button class="order">В корзину</button>
+            </div>
+        </div>
+    </div>
+    <div class="popular-position">
+        <div class="popular-left">
+            <a href="#" style="display: block;">
+                <img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="popular-right">
+            <div class="position-name"><h3>Мармеладная лента Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Enim, reprehenderit. Nostrum labore illum dolorum amet, omnis eligendi possimus accusamus rerum iusto
+                recusandae error iure adipisci sed molestias nulla quaerat veniam. Id voluptatem reiciendis, aut itaque
+                illo quisquam non atque natus iusto veniam, nostrum expedita fugit, unde consequatur odio ad dolor!</h3>
+            </div>
+            <div class="position-description">Lorem ipsum dolor sit lor amet consectetur adipisicing elit. Vitae magnam
+                voluptatem sit blanditiis consequuntur consectetur repellat doloremque quae facere illo.
+            </div>
+            <div class="position-right-btm">
+                <div class="position-price">350руб/кг</div>
+                <button class="order">В корзину</button>
+            </div>
+        </div>
+    </div>
+    <div class="popular-position">
+        <div class="popular-left">
+            <a href="#" style="display: block;">
+                <img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="popular-right">
+            <div class="position-name"><h3>Мармеладная лента Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Enim, reprehenderit. Nostrum labore illum dolorum amet, omnis eligendi possimus accusamus rerum iusto
+                recusandae error iure adipisci sed molestias nulla quaerat veniam. Id voluptatem reiciendis, aut itaque
+                illo quisquam non atque natus iusto veniam, nostrum expedita fugit, unde consequatur odio ad dolor!</h3>
+            </div>
+            <div class="position-description">Lorem ipsum dolor sit lor amet consectetur adipisicing elit. Vitae magnam
+                voluptatem sit blanditiis consequuntur consectetur repellat doloremque quae facere illo.
+            </div>
+            <div class="position-right-btm">
+                <div class="position-price">350руб/кг</div>
+                <button class="order">В корзину</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- <div class="popular-position">
+  <p>Position name</p>
+  <p>Position price</p>
+  <p>Position description</p>
+  <button>Order</button> -->
+</div>
+
+
+</div>
+</div>
+<!-- Посмотреть еще -->
+<div class="all-menu">
+    <h1><a href="#">Посмотреть все меню</a></h1>
+</div>
+<script type="text/javascript">
+    // TODO TODO TODO TODO TODO TODO TODO 
+    const navBar = document.querySelector('.navigation'),
+          bttns = document.querySelectorAll('.slider-btn');
+    for (let i = 0; i < 2; i++) {
+      let bttn = bttns[i]
+      bttn.style.top = (document.documentElement.clientHeight / 2) + navBar.offsetHeight - (bttn.offsetHeight / 2) + "px"
+    };
+
+</script>
+
+<script src="{% static 'market/css/script.js' %}"></script>
+
+{% for m in images %}
+<h1>{{ m.name }}</h1>
+<h1>{{ m.uploaded }}</h1>
+<h1>{{ m.image }}</h1>
+<img src="{{ m.image.url }}" alt="">
+{% endfor %}
+
+
+</body>
+
+</html>
