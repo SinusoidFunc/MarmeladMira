@@ -9,10 +9,4 @@ from marmeladmira.settings import MEDIA_URL, BASE_DIR
 
 
 def index(request):
-    images = Slider.objects.all()
-    context = {'images': images,
-               'media': MEDIA_URL,
-               'dir': BASE_DIR}
-
-    return render(request, '/home/khamzat/PycharmProjects/marmelad/marmeladmira/market/templates/market/index.html',
-                  context=context)
+    return render(request, '/home/khamzat/PycharmProjects/marmelad/marmeladmira/market/templates/market/index.html',)
