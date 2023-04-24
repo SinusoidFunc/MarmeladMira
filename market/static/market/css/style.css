@@ -222,32 +222,70 @@ a {
 
     .popular-pos-wrapper {
         background-color: pink;
+        font-size: 0;
+        width: 1000px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     /* Div, в котором находится все элементы одной позиции */
     .popular-position {
         background-color: white;
-        width: 500px;
-        height: 500px;
-        display: flex;
-        
+        width: 480px;
+        height: 201px;
+        display: inline-flex;
+    }
+
+    .popular-left {
+        display: inline-block;
+        width: 166px;
     }
 
     .popular-pos-img {
         width: 166px;
         height: 166px;
         object-fit: cover;
-        border-radius: 50%;
-        
+        border-radius: 50%;  
     }
-
 
     .popular-right {
-        margin: 0 0 0 15px;
+        display: inline-flex;
+        flex-direction: column;
+        vertical-align: top;
+        justify-content: space-between;
+        width: 100%;
+        height: 166px;
+        margin-left: 20px;
+    }
+
+    .popular-name {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .popular-name h3 {
+        margin: 0;
+    }
+
+    .popular-description {
+        font-size: 20px;
+        margin-top: 10px;
+        height: 100%;
+        width: 294px;
         
     }
+
+    .popular-buy {
+        display: flex;
+        justify-content: end;
+    }
+
+    button {
+        font-size: 20px;
+    }
+    
+
 }
 /* --------------Popular positions------------- */
 

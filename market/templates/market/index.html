@@ -79,24 +79,80 @@
     <h1 class="text-popular">Популярное</h1>
 </div>
 <!-- Популярные позиции(или по другому аттрибуту из бд) -->
+<div style="width: 100%; background-color: aqua; display: flex; justify-content: center;">
 <div class="popular-pos-wrapper">
     <div class="popular-position">
         <div class="popular-left">
-            
-                <img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt="">
-            
+            <a href="#"><img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt=""></a>   
         </div>
         <div class="popular-right">
-            <div class="position-name"><h3><a href="#">Name of position</a></h3></div>
-            <div class="position-description">Description of position</div>
-            <div class="position-right-btm">
-                <div class="position-price">350руб/кг</div>
-                <button class="order">В корзину</button>
-            </div>
+            <div class="popular-name"><a href="#"><h3>Product name</h3></a></div>
+            <div class="popular-description">Зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане Нужно обрезать текст с помощью JavaSCript.</div>
+            <div class="popular-buy"><button><strong>324 р/кг</strong></button></div>
         </div>
     </div>
-
+    <div class="popular-position">
+        <div class="popular-left">
+            <a href="#"><img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt=""></a>   
+        </div>
+        <div class="popular-right">
+            <div class="popular-name"><a href="#"><h3>Product name</h3></a></div>
+            <div class="popular-description">Зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане Нужно обрезать текст с помощью JavaSCript.</div>
+            <div class="popular-buy"><button><strong>324 р/кг</strong></button></div>
+        </div>
+    </div>
+    <div class="popular-position">
+        <div class="popular-left">
+            <a href="#"><img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt=""></a>   
+        </div>
+        <div class="popular-right">
+            <div class="popular-name"><a href="#"><h3>Product name</h3></a></div>
+            <div class="popular-description">Зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане Нужно обрезать текст с помощью JavaSCript.</div>
+            <div class="popular-buy"><button><strong>324 р/кг</strong></button></div>
+        </div>
+    </div>
+    <div class="popular-position">
+        <div class="popular-left">
+            <a href="#"><img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt=""></a>   
+        </div>
+        <div class="popular-right">
+            <div class="popular-name"><a href="#"><h3>Product name</h3></a></div>
+            <div class="popular-description">Зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане Нужно обрезать текст с помощью JavaSCript.</div>
+            <div class="popular-buy"><button><strong>324 р/кг</strong></button></div>
+        </div>
+    </div>
+    <div class="popular-position">
+        <div class="popular-left">
+            <a href="#"><img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt=""></a>   
+        </div>
+        <div class="popular-right">
+            <div class="popular-name"><a href="#"><h3>Product name</h3></a></div>
+            <div class="popular-description">Зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане Нужно обрезать текст с помощью JavaSCript.</div>
+            <div class="popular-buy"><button><strong>324 р/кг</strong></button></div>
+        </div>
+    </div>
+    <div class="popular-position">
+        <div class="popular-left">
+            <a href="#"><img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt=""></a>   
+        </div>
+        <div class="popular-right">
+            <div class="popular-name"><a href="#"><h3>Product name</h3></a></div>
+            <div class="popular-description">Зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане Нужно обрезать текст с помощью JavaSCript.</div>
+            <div class="popular-buy"><button><strong>324 р/кг</strong></button></div>
+        </div>
+    </div>
+    <div class="popular-position">
+        <div class="popular-left">
+            <a href="#"><img class="popular-pos-img" src="{% static 'market/images/popular-pos-img.jpg' %}" alt=""></a>   
+        </div>
+        <div class="popular-right">
+            <div class="popular-name"><a href="#"><h3>Product name</h3></a></div>
+            <div class="popular-description">Зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане Нужно обрезать текст с помощью JavaSCript.</div>
+            <div class="popular-buy"><button><strong>324 р/кг</strong></button></div>
+        </div>
+    </div>
     
+</div>
 </div>
 
 <!-- <div class="popular-position">
@@ -123,6 +179,7 @@
 </script>
 
 <script src="{% static 'market/css/script.js' %}"></script>
+
 
 {% for m in images %}
 <h1>{{ m.name }}</h1>
