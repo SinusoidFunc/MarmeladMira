@@ -1,10 +1,8 @@
 from django.db import models
 
 
-# Create your models here
-
-
-class Slider(models.Model):
-    name = models.CharField(max_length=80)
-    image = models.ImageField(null=True, upload_to='photos/%Y/%m/%d/')
-    uploaded = models.DateTimeField('date published', blank=True)
+class SliderImage(models.Model):
+    name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='images/slider')
+    uploaded = models.DateTimeField(auto_now_add='YYYY-MM-DD HH:MM')
+    text = models.TextField()

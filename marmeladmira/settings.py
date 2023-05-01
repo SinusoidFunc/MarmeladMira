@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'marmeladmira.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'marmelad',
+        'NAME': 'marmeladmira',
         'USER': 'khamzat',
-        'PASSWORD': '0000',
+        'PASSWORD': '1234',
     }
 }
 
@@ -126,7 +126,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_URL = '/media/'
+MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
 
-MEDIA_ROOT = f'{BASE_DIR}/market{MEDIA_URL}'

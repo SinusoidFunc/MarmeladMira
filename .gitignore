@@ -3,7 +3,16 @@
 /workspace.xml
 /.vscode/
 /.idea/
+
+
 /venv/
 /__pycache__/
+
+# My File
 train.py
 
+# Default db
+./db.sqlite3
+
+# Compiled python files
+./market/__pycache__/

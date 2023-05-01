@@ -58,9 +58,9 @@
         <strong>&gt;</strong>
     </div>
     <div class="slider-line">
-        <img class="slider-img" src="{% static 'market/images/home-back.jpg' %}" alt="">
-        <img class="slider-img" src="{% static 'market/images/slider.jpg' %}" alt="">
-        <img class="slider-img" src="{% static 'market/images/slider1.jpg' %}" alt="">
+        {% for obj in sliders %}
+        <img class="slider-img" src="{{ obj.image.url }}" alt="{{ obj.text }}">
+        {% endfor %}
     </div>
     <!-- Точки для показа номера переключения слайдов -->
     <!-- <div class="slider-dot">
@@ -87,7 +87,7 @@
         </div>
         <div class="popular-right">
             <div class="popular-name"><a href="#"><h3>Product name</h3></a></div>
-            <div class="popular-description">Зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане Нужно обрезать текст с помощью JavaSCript.</div>
+            <div class="popular-description">В общем плане Нужно обрезать текст с помощью JavaSCript.</div>
             <div class="popular-buy"><button><strong>324 р/кг</strong></button></div>
         </div>
     </div>
