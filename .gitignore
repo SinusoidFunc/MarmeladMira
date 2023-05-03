@@ -16,3 +16,8 @@ train.py
 
 # Compiled python files
 ./market/__pycache__/
+
+
+# Media files
+./media/
+./market/static/market/images/
