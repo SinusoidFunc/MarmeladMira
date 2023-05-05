@@ -8,6 +8,7 @@ from market.models import *
 
 
 def index(request):
+    positions = Position.objects.all()
     sliders = SliderImage.objects.all()
     return render(request, '/home/khamzat/PycharmProjects/marmelad/marmeladmira/market/templates/market/index.html',
-                  {'sliders': sliders})
+                  {'sliders': sliders, 'pos': positions})
